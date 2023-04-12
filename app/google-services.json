@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "280652911528",
+    "project_id": "kotlin-app-9968e",
+    "storage_bucket": "kotlin-app-9968e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280652911528:android:e682b08bce1a409032839d",
+        "android_client_info": {
+          "package_name": "com.example.mobilecodingchallenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280652911528-sp7c32tk26l8j67mt9vqiqhhb1l4a4sk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl8W21LpKucbHEjL9HwnIKJbr1sx3b7IE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280652911528-sp7c32tk26l8j67mt9vqiqhhb1l4a4sk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
