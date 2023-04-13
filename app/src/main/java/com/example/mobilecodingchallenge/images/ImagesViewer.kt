@@ -44,7 +44,7 @@ class ImagesViewer : AppCompatActivity() {
             }
             if (response.isSuccessful) {
                 images = response.body()!!.map { photo ->
-                    Image(photo.id, photo.title ?: "", Urls(photo.urls.regular))
+                    Image(photo.id, photo.title, Urls(photo.urls.regular))
                 }
             } else {
                 Toast.makeText(this@ImagesViewer, "Failed to fetch images", Toast.LENGTH_SHORT).show()
@@ -53,7 +53,7 @@ class ImagesViewer : AppCompatActivity() {
 
             adapter = ImageAdapter(images) { image ->
                 // Handle click on image
-                Toast.makeText(this@ImagesViewer, "Clicked on ${image.title}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@ImagesViewer, "Clicked on ${image.id}", Toast.LENGTH_SHORT).show()
             }
             imageList.adapter = adapter
         }

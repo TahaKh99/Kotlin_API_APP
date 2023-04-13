@@ -38,7 +38,8 @@ class SignUpFirebase : AppCompatActivity(){
             val pass = binding.password.text.toString()
             val confirmPass = binding.confirmPassword.text.toString()
 
-            if (isEmailValid(email) && isPasswordValid(pass) && pass == confirmPass) {
+//            if (isEmailValid(email) && isPasswordValid(pass) && pass == confirmPass) {
+                if (email !="" && pass!= "" && pass == confirmPass) {
                 firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
                         val intent = Intent(this, SignInFirebase::class.java)

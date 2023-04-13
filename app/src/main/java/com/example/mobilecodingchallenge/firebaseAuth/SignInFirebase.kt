@@ -35,7 +35,8 @@ class SignInFirebase : AppCompatActivity() {
             val email = binding.email.text.toString()
             val pass = binding.password.text.toString()
 
-            if (isEmailValid(email) && isPasswordValid(pass)) {
+//            if (isEmailValid(email) && isPasswordValid(pass)) {
+                if (email !="" && pass!= "") {
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
                         val intent = Intent(this, MainActivity::class.java)
